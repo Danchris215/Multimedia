@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Embeds</title>
+    <style>
+        /* Styles for iframe embed */
+        .iframeembed {
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        /* Styles for video embed */
+        .embedvideo {
+            padding: 20px;
+            width: 40%;
+            float: left;
+        }
+
+        /* Styles for audio embed */
+        .embedaudio {
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        /* Styles for YouTube iframe */
+        .embed-youtube {
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        
+
+        /*media query*/
+        @media screen and (max-width: 760px) {
+            .iframeembed,
+            .embedvideo,
+            .embedaudio,
+            .embed-youtube {
+                width: 100%; 
+                 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div class="iframeembed">
+            <iframe src="my_personal_page.html" title="This is my personal page" width="300px" height="250px"></iframe>
+        </div>
+
+        <div class="embedvideo">
+            <video width="100px" height="
+            150px" controls>
+                <source src="4_5999213007702332662.mp4" type="video/mp4">
+                <source src="4_5999213007702332662.ogg" type="video/ogg">
+                Your brrowser does not support this version.
+            </video>
+        </div>
+
+        <div class="embedvideo">
+            <video width="100px" height="150px" controls>
+                <source src="4_5999213007702332663.mp4" type="video/mp4">
+                <source src="4_5999213007702332663.ogg" type="video/ogg">
+                Your browser does not support this version.
+            </video>
+        </div>
+
+        <div class="embedaudio">
+            <audio controls>
+                <source src="30-nov-2-03-pm-64909.mp3" type="audio/mp3">
+                <source src="30-nov-2-03-pm-64909.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="embedaudio">
+            <audio controls>
+                <source src="72843-lonemonk-approx-800-laughter-only-1-wav-64898.mp3" type="audio/mp3">
+                <source src="72843-lonemonk-approx-800-laughter-only-1-wav-64898.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="embed-youtube">
+            <iframe src="https://www.youtube.com/embed/H1SrvI-ysbk" ></iframe>
+        </div>
+
+        <div class="embed-youtube">
+            <iframe src="https://www.youtube.com/embed/J38Yq85ZoyY"></iframe>
+        </div>
+    </div>
+</body>
+</html>
